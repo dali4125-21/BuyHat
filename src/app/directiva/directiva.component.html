@@ -1,0 +1,15 @@
+<button type="button" (click)= "setHabilitar()" class="btn btn-primary">
+    {{habilitar==true?'ocultar':'Mostrar'}}
+</button>
+<div clas="card" style="width: 18rem;">
+    <div class="card-header">
+    <img src="./imagenes/Captura de Pantalla 2021-11-23 a la(s) 11.01.35 a.m..png" class="card-img-top" alt="...">
+      <h5 class="card-title">catalogo de productos</h5>
+      <p class="card-text">las mejores gorras del planeta</p>
+    </div>
+    <ul class="list-group" *ngIf="habilitar==true">
+      <li class="list-group-item" *ngFor="let factura of facturas">{{factura}}</li>
+    </ul>
+      <a href="#" class="card-link">Card link</a>
+      <a href="#" class="card-link">Another link</a>    
+</div>
